@@ -6,7 +6,7 @@ class HttpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('HTTPs'),),
+      appBar: AppBar(title: const Text('HTTPs'),),
       body: Container(),
     );
   }
