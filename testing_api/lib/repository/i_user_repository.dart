@@ -1,3 +1,6 @@
+import '../model/user_model.dart';
+
 abstract class IUserRepository {
-  Future<list<UserModel>> findAllUsers();
+  Future<List<UserModel>> findAllUsers();
+  
 }
