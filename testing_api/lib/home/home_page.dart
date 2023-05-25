@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -14,7 +15,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextButton(onPressed:() {} ,
+            TextButton(onPressed:() => Get.toNamed('/http') ,
             child: const Text('HTTP', style: TextStyle(fontSize: 20),)
         ),
         TextButton(onPressed:() {} ,
