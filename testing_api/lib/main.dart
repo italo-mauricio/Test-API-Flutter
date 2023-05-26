@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:testing_api/home/http/http_bindings.dart';
 
 import 'home/home_page.dart';
 import 'home/http/http_page.dart';
@@ -16,10 +17,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      getPages: [GetPage(name: '/', page: () => const HomePage(),
-      children: [
-        GetPage(name: '/http', page: () => const HttpPage())
-      ])],
+      getPages: [
+        GetPage(name: '/', page: () => const HomePage(), children: [
+          GetPage(
+            name: '/http',
+            page: () => const HttpPage(),
+            binding: HttpBindings(),
+          )
+        ])
+      ],
     );
   }
 }
