@@ -5,4 +5,8 @@ class UserType {
     required this.id,
     required this.name,
   });
+
+  toMap() {}
+
+  static fromMap(Map<String, dynamic> x) {}
 }
