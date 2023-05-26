@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:testing_api/home/http/http_controller.dart';
 
-class HttpPage extends StatelessWidget {
+class HttpPage extends GetView<HttpController> {
   const HttpPage({super.key});
 
   @override
